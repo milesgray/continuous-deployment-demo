@@ -1,1 +1,4 @@
-credentials.tar.gz
+#credentials.tar.gz
+.old.*
+api_key.py
+CLanalysis-7014fa6351c8.json
