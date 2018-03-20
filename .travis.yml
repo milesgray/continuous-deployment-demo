@@ -37,7 +37,7 @@ install:
 - gcloud -q components install app-engine-python-extras
 # Install the Python dependencies
 # - pip install -r api/tests/requirements.txt -t lib/
-- GAE_PYTHONPATH=${HOME}/google-cloud-sdk/platform/google_appengine
+#- GAE_PYTHONPATH=${HOME}/google-cloud-sdk/platform/google_appengine
 - pip install nosegae
 - pip install Pillow
 script:
