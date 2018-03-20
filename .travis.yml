@@ -29,6 +29,7 @@ before_install:
 # [END auth]
 install:
 - ${HOME}/google-cloud-sdk/install.sh
+- bash /home/travis/google-cloud-sdk/path.bash.inc
 # Set the correct project to deploy to
 #- gcloud config set project chuispdetector
 - gcloud -q components update gae-python
@@ -36,6 +37,7 @@ install:
 - gcloud -q components install app-engine-python-extras
 # Install the Python dependencies
 # - pip install -r api/tests/requirements.txt -t lib/
+#- GAE_PYTHONPATH=${HOME}/google-cloud-sdk/platform/google_appengine
 - pip install nosegae
 - pip install Pillow
 script:
